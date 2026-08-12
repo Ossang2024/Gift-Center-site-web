@@ -16,7 +16,7 @@
             
  $to = "contact@example.com"; //Replace your real receiving email address
 
- $header = "From:info@example.com \r\n"; //Replace with your real web master email
+ $header = "From:giftagency237@gmail.com \r\n"; //Replace with your real web master email
  $header .= "MIME-Version: 1.0\r\n";
  $header .= "Content-type: text/html\r\n";
  
