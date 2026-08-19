@@ -704,7 +704,7 @@ label {
 .theme-btn {
   font-size: 14px;
   color: var(--color-white);
-  padding: 14px 20px;
+  padding: 14px 10px;
   transition: var(--transition);
   text-transform: uppercase;
   position: relative;
@@ -718,6 +718,9 @@ label {
   background: var(--theme-color2);
   box-shadow: var(--box-shadow);
   z-index: 1;
+  white-space: nowrap;
+  width: 150px;
+  display: inline-block;
 }
 
 .theme-btn::before {
@@ -1118,7 +1121,7 @@ label {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 20px;
     margin-left: 45px;
   }
 
@@ -4067,6 +4070,9 @@ label {
 
 .team-img img {
   border-radius: 50px 50px 50px 0;
+  width: 100%;
+  min-height: 330px;
+  min-width: 250px;
 }
 
 .team-content {
