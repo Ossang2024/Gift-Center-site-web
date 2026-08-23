@@ -719,7 +719,7 @@ label {
   box-shadow: var(--box-shadow);
   z-index: 1;
   white-space: nowrap;
-  width: 150px;
+  /* width: 150px; */
   display: inline-block;
 }
 
