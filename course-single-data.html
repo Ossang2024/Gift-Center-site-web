@@ -1,197 +1,336 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
-
-<head>
+  <head>
     <!-- meta tags -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
 
     <!-- title -->
     <title>Gift Center - Développement Web & Mobile</title>
 
     <!-- favicon -->
-    <link rel="icon" type="image/x-icon" href="assets/img/logo/favicon-gift.ico">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="assets/img/logo/favicon-gift.ico"
+    />
 
     <!-- css -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/all-fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/animate.min.css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all-fontawesome.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.min.css" />
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <!-- preloader -->
     <div class="preloader">
-        <div class="loader-book">
-            <div class="loader-book-page"></div>
-            <div class="loader-book-page"></div>
-            <div class="loader-book-page"></div>
-        </div>
+      <div class="loader-book">
+        <div class="loader-book-page"></div>
+        <div class="loader-book-page"></div>
+        <div class="loader-book-page"></div>
+      </div>
     </div>
     <!-- preloader end -->
 
-
     <!-- header area -->
     <header class="header">
-
-        <!-- header top -->
-        <div class="header-top">
-            <div class="container">
-                <div class="header-top-wrap">
-                    <div class="header-top-left">
-                        <div class="header-top-social">
-                            <span>Suivez-nous : </span>
-                            <a href="https://www.facebook.com/giftcenter00237" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
-                            <a href="https://youtu.be/hLjIiWJATbw?si=-hZdT7vceO1a3NTI" target="_blank"><i class="fab fa-youtube"></i></a>
-                            <a href="https://wa.me/237695200378" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        </div>
-                    </div>
-                    <div class="header-top-right">
-                        <div class="header-top-contact">
-                            <ul>
-                                <li>
-                                    <a href="#"><i class="far fa-location-dot"></i> Douala, Cameroun</a>
-                                </li>
-                                <li>
-                                    <a href="mailto:giftagency237@gmail.com"><i class="far fa-envelopes"></i> giftagency237@gmail.com</a>
-                                </li>
-                                <li>
-                                    <a href="tel:+237695200378"><i class="far fa-phone-volume"></i> +237 6 95 20 03 78</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+      <!-- header top -->
+      <div class="header-top">
+        <div class="container">
+          <div class="header-top-wrap">
+            <div class="header-top-left">
+              <div class="header-top-social">
+                <span>Suivez-nous : </span>
+                <a
+                  href="https://www.facebook.com/giftcenter00237"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+                <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
+                <a
+                  href="https://youtu.be/hLjIiWJATbw?si=-hZdT7vceO1a3NTI"
+                  target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+                <a href="https://wa.me/237695200378" target="_blank"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+              </div>
             </div>
+            <div class="header-top-right">
+              <div class="header-top-contact">
+                <ul>
+                  <li>
+                    <a href="#"
+                      ><i class="far fa-location-dot"></i> Douala, Cameroun</a
+                    >
+                  </li>
+                  <li>
+                    <a href="mailto:giftagency237@gmail.com"
+                      ><i class="far fa-envelopes"></i>
+                      giftagency237@gmail.com</a
+                    >
+                  </li>
+                  <li>
+                    <a href="tel:+237695200378"
+                      ><i class="far fa-phone-volume"></i> +237 6 95 20 03 78</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
-        
-        <div class="main-navigation">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container position-relative">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="assets/img/logo/Logo-gift-long-light-removebg-preview.png"  alt="logo">
-                    </a>
-                    <div class="mobile-menu-right">
-                        <div class="search-btn">
-                            <button type="button" class="nav-right-link search-box-outer"><i
-                                    class="far fa-search"></i></button>
-                        </div>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-mobile-icon"><i class="far fa-bars"></i></span>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse" id="main_nav">
-                        <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" >Formations</a>
-                                <ul class="dropdown-menu fade-down">
-                                    <li><a class="dropdown-item" href="course.html">Toutes nos formations</a></li>
-                                    <li><a class="dropdown-item" href="course-2.html">Formations par catégorie</a></li>
-                                    <li><a class="dropdown-item active" href="course-single.html">Fiche de formation</a></li>
-                                    <!-- <li><a class="dropdown-item" href="course-single-2.html">Course Single Two</a></li> -->
-                                </ul>
-                            </li>
-                            <li class="nav-item mega-menu dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Nos Pôles</a>
-                                <div class="dropdown-menu fade-down">
-                                    <div class="mega-content">
-                                        <div class="container-fluid">
-                                            <div class="row">
-                                                <div class="col-12 col-sm-4 col-md-3">
-                                                    <h5>Gift Center</h5>
-                                                    <div class="menu-about">
-                                                        <a href="#" class="menu-about-logo"><img
-                                                                src="assets/img/logo/Logo-gift-long-light-removebg-preview.png"  alt=""></a>
-                                                        <p>Centre de formation professionnelle, linguistique et digitale basé à Douala. Formation, innovation et accompagnement.</p>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12 col-sm-4 col-md-3">
-                                                    <h5>Formation & Digital</h5>
-                                                    <ul class="mega-menu-item">
-                                                        <li><a class="dropdown-item" href="academic-single-design.html">Graphisme & Design</a></li>
-                                                       <li><a class="dropdown-item" href="academic-single-video.html">Montage Vidéo</a></li>
-                                                        <li><a class="dropdown-item"
-                                                                href="academic-single-dev.html">Développement Web & Mobile</a>
-                                                        </li>
-                                                        <li><a class="dropdown-item" href="academic-single-data.html">Data Analysis
-                                                                </a></li>
-                                                        <li><a class="dropdown-item" href="academic-single-administrative.html">Assistance Administrative & Digitale</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-12 col-sm-4 col-md-3">
-                                                    <h5>Langues & Voyages</h5>
-                                                    <ul class="mega-menu-item">
-                                                        <li><a class="dropdown-item"
-                                                                href="academic-single-anglais.html">Anglais (+ IELTS)</a></li>
-                                                        <li><a class="dropdown-item" href="academic-single-allemand.html">Allemand (A1 à C1, Goethe-Zertifikat)</a></li>
-                                                        <li><a class="dropdown-item" href="academic-single-italien.html">Italien (CELI, CILS, PLIDA)</a></li>
-                                                        <li><a class="dropdown-item"
-                                                                href="academic-single-francais.html">Français (TCF)</a></li>
-                                                        <li><a class="dropdown-item"
-                                                                href="academic-single.html">Accompagnement Mobilité Internationale</a></li>
-                                                    </ul>
-                                                </div>
-                                                <div class="col-12 col-sm-12 col-md-3">
-                                                    <h5>Solutions & Contact</h5>
-                                                    <ul class="mega-menu-item">
-                                                        <li><a class="dropdown-item" href="portfolio.html">Création de Sites Web
-                                                                </a></li>
-                                                        <li><a class="dropdown-item"
-                                                                href="portfolio-single.html">Design & Identité Visuelle
-                                                                </a></li>
-                                                        <li><a class="dropdown-item" href="teacher.html">Notre Équipe</a>
-                                                        </li>
-                                                        <!-- <li><a class="dropdown-item" href="faculty-single.html">Faculty
+      </div>
+
+      <div class="main-navigation">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container position-relative">
+            <a class="navbar-brand" href="index.html">
+              <img
+                src="assets/img/logo/Logo-gift-long-light-removebg-preview.png"
+                alt="logo"
+              />
+            </a>
+            <div class="mobile-menu-right">
+              <div class="search-btn">
+                <button type="button" class="nav-right-link search-box-outer">
+                  <i class="far fa-search"></i>
+                </button>
+              </div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#main_nav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-mobile-icon"
+                  ><i class="far fa-bars"></i
+                ></span>
+              </button>
+            </div>
+            <div class="collapse navbar-collapse" id="main_nav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle active"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    >Formations</a
+                  >
+                  <ul class="dropdown-menu fade-down">
+                    <li>
+                      <a class="dropdown-item" href="course.html"
+                        >Toutes nos formations</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="course-2.html"
+                        >Formations par catégorie</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item active" href="course-single.html"
+                        >Fiche de formation</a
+                      >
+                    </li>
+                    <!-- <li><a class="dropdown-item" href="course-single-2.html">Course Single Two</a></li> -->
+                  </ul>
+                </li>
+                <li class="nav-item mega-menu dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    >Nos Pôles</a
+                  >
+                  <div class="dropdown-menu fade-down">
+                    <div class="mega-content">
+                      <div class="container-fluid">
+                        <div class="row">
+                          <div class="col-12 col-sm-4 col-md-3">
+                            <h5>Gift Center</h5>
+                            <div class="menu-about">
+                              <a href="#" class="menu-about-logo"
+                                ><img
+                                  src="assets/img/logo/Logo-gift-long-light-removebg-preview.png"
+                                  alt=""
+                              /></a>
+                              <p>
+                                Centre de formation professionnelle,
+                                linguistique et digitale basé à Douala.
+                                Formation, innovation et accompagnement.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-12 col-sm-4 col-md-3">
+                            <h5>Formation & Digital</h5>
+                            <ul class="mega-menu-item">
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="academic-single-design.html"
+                                  >Graphisme & Design</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="academic-single-video.html"
+                                  >Montage Vidéo</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="academic-single-dev.html"
+                                  >Développement Web & Mobile</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="academic-single-data.html"
+                                  >Data Analysis
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="academic-single-administrative.html"
+                                  >Assistance Administrative & Digitale</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-12 col-sm-4 col-md-3">
+                            <h5>Langues & Voyages</h5>
+                            <ul class="mega-menu-item">
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="academic-single-anglais.html"
+                                  >Anglais (+ IELTS)</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="academic-single-allemand.html"
+                                  >Allemand (A1 à C1, Goethe-Zertifikat)</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="academic-single-italien.html"
+                                  >Italien (CELI, CILS, PLIDA)</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="academic-single-francais.html"
+                                  >Français (TCF)</a
+                                >
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="academic-single.html"
+                                  >Accompagnement Mobilité Internationale</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                          <div class="col-12 col-sm-12 col-md-3">
+                            <h5>Solutions & Contact</h5>
+                            <ul class="mega-menu-item">
+                              <li>
+                                <a class="dropdown-item" href="portfolio.html"
+                                  >Création de Sites Web
+                                </a>
+                              </li>
+                              <li>
+                                <a
+                                  class="dropdown-item"
+                                  href="portfolio-single.html"
+                                  >Design & Identité Visuelle
+                                </a>
+                              </li>
+                              <li>
+                                <a class="dropdown-item" href="teacher.html"
+                                  >Notre Équipe</a
+                                >
+                              </li>
+                              <!-- <li><a class="dropdown-item" href="faculty-single.html">Faculty
                                                                 Single</a></li> -->
-                                                        <li><a class="dropdown-item" href="contact.html">Nous Contacter
-                                                                </a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
-                                <ul class="dropdown-menu fade-down">
-                                    <li><a class="dropdown-item" href="about.html">À propos</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item" href="event.html">Événements</a>
-                                        <!-- <ul class="dropdown-menu">
+                              <li>
+                                <a class="dropdown-item" href="contact.html"
+                                  >Nous Contacter
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    >Pages</a
+                  >
+                  <ul class="dropdown-menu fade-down">
+                    <li>
+                      <a class="dropdown-item" href="about.html">À propos</a>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item" href="event.html">Événements</a>
+                      <!-- <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="event.html">Événements</a></li>
                                             <li><a class="dropdown-item" href="event-single.html">Détail Événement</a></li>
                                         </ul> -->
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item" href="portfolio.html">Réalisations</a>
-                                        <!-- <ul class="dropdown-menu">
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item" href="portfolio.html"
+                        >Réalisations</a
+                      >
+                      <!-- <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="portfolio.html">Portfolio</a></li>
                                             <li><a class="dropdown-item" href="portfolio-single.html">Détail Réalisation
                                                 </a></li>
                                         </ul> -->
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item" href="teacher.html">Notre Équipe</a>
-                                        <!-- <ul class="dropdown-menu">
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item" href="teacher.html"
+                        >Notre Équipe</a
+                      >
+                      <!-- <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="teacher.html">Notre Équipe</a></li>
                                             
                                             <li><a class="dropdown-item" href="teacher-single.html">Fiche Membre</a>
                                             </li>
                                         </ul> -->
-                                    </li>
-                                    <li><a class="dropdown-item" href="gallery.html">Galerie</a></li>
-                                    <!-- <li class="dropdown-submenu">
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="gallery.html">Galerie</a>
+                    </li>
+                    <!-- <li class="dropdown-submenu">
                                         <a class="dropdown-item dropdown-toggle" href="#">Authentication</a>
                                         <ul class="dropdown-menu">
                                             <li><a class="dropdown-item" href="login.html">Login</a></li>
@@ -200,85 +339,186 @@
                                             </li>
                                         </ul>
                                     </li> -->
-                                    <li><a class="dropdown-item" href="pricing.html">Tarifs</a></li>
-                                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
-                                    <li><a class="dropdown-item" href="testimonial.html">Témoignages</a></li>
-                                    <!-- <li><a class="dropdown-item" href="404.html">404 Error</a></li> -->
-                                    <li><a class="dropdown-item" href="coming-soon.html">Bientôt disponible</a></li>
-                                    <li><a class="dropdown-item" href="terms.html">Conditions d'utilisation</a></li>
-                                    <li><a class="dropdown-item" href="privacy.html">Politique de confidentialité</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Inscriptions</a>
-                                <ul class="dropdown-menu fade-down">
-                                    <li><a class="dropdown-item" href="how-to-apply.html">Comment s'inscrire</a></li>
-                                    <li><a class="dropdown-item" href="application-form.html">Formulaire d'inscription</a></li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" href="#">Our Campus</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="campus-tour.html">Campus Tour</a></li>
-                                            <li><a class="dropdown-item" href="campus-life.html">Campus Life</a></li>
-                                            <li><a class="dropdown-item" href="notice-board.html">Notice Board</a></li>
-                                            <li><a class="dropdown-item" href="student-activities.html">Student
-                                                    Activities</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" href="#">Our Facilities</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="facility.html">Facilities</a></li>
-                                            <li><a class="dropdown-item" href="facility-single.html">Facility Single</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" href="#">Our Research</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="research.html">Research</a></li>
-                                            <li><a class="dropdown-item" href="research-single.html">Research Single</a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li class="dropdown-submenu">
-                                        <a class="dropdown-item dropdown-toggle" href="#">Our Clubs</a>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="club.html">Our Clubs</a></li>
-                                            <li><a class="dropdown-item" href="club-single.html">Club Single</a></li>
-                                        </ul>
-                                    </li>
-                                    <li><a class="dropdown-item" href="tuition-fee.html">Tuition Fees</a></li>
-                                    <li><a class="dropdown-item" href="alumni.html">Alumni</a></li>
-                                    <li><a class="dropdown-item" href="scholarship.html">Scholarships</a></li>
-                                    <li><a class="dropdown-item" href="our-fund.html">Our Fund</a></li>
-                                    <li><a class="dropdown-item" href="athletics.html">Athletics</a></li>
-                                    <li><a class="dropdown-item" href="health-care.html">Health Care</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                    <a class="nav-link" href="blog.html">Actualités</a>
-                  </li>
-                            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                        </ul>
-                        <div class="nav-right">
-                            <!-- <div class="search-btn">
+                    <li>
+                      <a class="dropdown-item" href="pricing.html">Tarifs</a>
+                    </li>
+                    <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                    <li>
+                      <a class="dropdown-item" href="testimonial.html"
+                        >Témoignages</a
+                      >
+                    </li>
+                    <!-- <li><a class="dropdown-item" href="404.html">404 Error</a></li> -->
+                    <li>
+                      <a class="dropdown-item" href="coming-soon.html"
+                        >Bientôt disponible</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="terms.html"
+                        >Conditions d'utilisation</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="privacy.html"
+                        >Politique de confidentialité</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-bs-toggle="dropdown"
+                    >Inscriptions</a
+                  >
+                  <ul class="dropdown-menu fade-down">
+                    <li>
+                      <a class="dropdown-item" href="how-to-apply.html"
+                        >Comment s'inscrire</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="application-form.html"
+                        >Formulaire d'inscription</a
+                      >
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#"
+                        >Our Campus</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="campus-tour.html"
+                            >Campus Tour</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="campus-life.html"
+                            >Campus Life</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="notice-board.html"
+                            >Notice Board</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            class="dropdown-item"
+                            href="student-activities.html"
+                            >Student Activities</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#"
+                        >Our Facilities</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="facility.html"
+                            >Facilities</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="facility-single.html"
+                            >Facility Single</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#"
+                        >Our Research</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="research.html"
+                            >Research</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="research-single.html"
+                            >Research Single</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-submenu">
+                      <a class="dropdown-item dropdown-toggle" href="#"
+                        >Our Clubs</a
+                      >
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="club.html"
+                            >Our Clubs</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="club-single.html"
+                            >Club Single</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="tuition-fee.html"
+                        >Tuition Fees</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="alumni.html">Alumni</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="scholarship.html"
+                        >Scholarships</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="our-fund.html">Our Fund</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="athletics.html"
+                        >Athletics</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="health-care.html"
+                        >Health Care</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="blog.html">Actualités</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+              </ul>
+              <div class="nav-right">
+                <!-- <div class="search-btn">
                                 <button type="button" class="nav-right-link search-box-outer"><i
                                         class="far fa-search"></i></button>
                             </div> -->
-                            <div class="nav-right-btn mt-2 d-flex gap-2">
-    <a href="Services.html" class="theme-btn theme-btn2"><span
-            class="fal fa-briefcase"></span>Nos Services</a>
-    <a href="application-form.html" class="theme-btn"><span
-            class="fal fa-pencil"></span>S'inscrire</a>
-</div>
-                        </div>
-                    </div>
+                <div class="nav-right-btn mt-2 d-flex gap-2">
+                  <a href="Services.html" class="theme-btn theme-btn2"
+                    ><span class="fal fa-briefcase"></span>Nos Services</a
+                  >
+                  <a href="application-form.html" class="theme-btn"
+                    ><span class="fal fa-pencil"></span>S'inscrire</a
+                  >
                 </div>
-            </nav>
-        </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <!-- header area end -->
-
 
     <!-- popup search -->
     <!-- <div class="search-popup">
@@ -292,270 +532,404 @@
     </div> -->
     <!-- popup search end -->
 
-
-
     <main class="main">
-
-        <!-- breadcrumb -->
-        <div class="site-breadcrumb" style="background: url(assets/img/breadcrumb/01.jpg)">
-            <div class="container">
-                <h2 class="breadcrumb-title">Data Analysis</h2>
-                <ul class="breadcrumb-menu">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li class="active">Formation</li>
-                </ul>
-            </div>
+      <!-- breadcrumb -->
+      <div
+        class="site-breadcrumb"
+        style="background: url(assets/img/breadcrumb/bg.png)"
+      >
+        <div class="container">
+          <h2 class="breadcrumb-title">Data Analysis</h2>
+          <ul class="breadcrumb-menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li class="active">Formation</li>
+          </ul>
         </div>
-        <!-- breadcrumb end -->
+      </div>
+      <!-- breadcrumb end -->
 
-
-        <!-- course-single -->
-        <div class="course-single-area py-120">
-            <div class="container">
-                <div class="course-single-wrapper">
+      <!-- course-single -->
+      <div class="course-single-area py-120">
+        <div class="container">
+          <div class="course-single-wrapper">
+            <div class="row">
+              <div class="col-xl-8 col-lg-8">
+                <div class="course-details">
+                  <div class="course-details-img mb-30">
+                    <img src="assets/img/course/single.jpg" alt="thumb" />
+                  </div>
+                  <div class="course-details">
+                    <h3 class="mb-20">Data Analysis</h3>
+                    <p class="mb-20">
+                      Notre formation en Data Analysis vous permettra d'acquérir
+                      les compétences nécessaires pour collecter, organiser,
+                      analyser et interpréter des données afin d'en tirer des
+                      informations utiles à la prise de décision. Vous
+                      apprendrez à comprendre les données, à les nettoyer, les
+                      transformer et les analyser à l'aide d'outils modernes
+                      d'analyse et de visualisation. L'objectif est de former
+                      des analystes capables de transformer des données brutes
+                      en informations pertinentes et exploitables pour les
+                      entreprises et les organisations.
+                    </p>
+                    <p class="mb-20">
+                      La formation vous permettra également de maîtriser les
+                      principales techniques d'analyse et de visualisation des
+                      données. Vous apprendrez notamment à travailler avec
+                      Excel, SQL, Python et des outils de Business Intelligence
+                      afin de manipuler les données, créer des tableaux de bord,
+                      produire des graphiques et présenter clairement les
+                      résultats d'une analyse. Les étudiants travailleront sur
+                      des jeux de données réels et des projets pratiques afin de
+                      développer leur expérience et de constituer
+                      progressivement un portfolio professionnel.
+                    </p>
                     <div class="row">
-                        <div class="col-xl-8 col-lg-8">
-                            <div class="course-details">
-                                <div class="course-details-img mb-30">
-                                    <img src="assets/img/course/single.jpg" alt="thumb">
-                                </div>
-                                <div class="course-details">
-                                    <h3 class="mb-20">Data Analysis</h3>
-                                    <p class="mb-20">
-                                        Notre formation en Data Analysis vous permettra d'acquérir les compétences
-                                        nécessaires pour collecter, organiser, analyser et interpréter des données afin
-                                        d'en tirer des informations utiles à la prise de décision. Vous apprendrez à
-                                        comprendre les données, à les nettoyer, les transformer et les analyser à l'aide
-                                        d'outils modernes d'analyse et de visualisation. L'objectif est de former des
-                                        analystes capables de transformer des données brutes en informations pertinentes
-                                        et exploitables pour les entreprises et les organisations.
-                                    </p>
-                                    <p class="mb-20">
-                                        La formation vous permettra également de maîtriser les principales techniques
-                                        d'analyse et de visualisation des données. Vous apprendrez notamment à travailler
-                                        avec Excel, SQL, Python et des outils de Business Intelligence afin de manipuler
-                                        les données, créer des tableaux de bord, produire des graphiques et présenter
-                                        clairement les résultats d'une analyse. Les étudiants travailleront sur des jeux
-                                        de données réels et des projets pratiques afin de développer leur expérience et
-                                        de constituer progressivement un portfolio professionnel.
-                                    </p>
-                                    <div class="row">
-                                        <div class="col-md-6 mb-20">
-                                            <img src="assets/img/course/01.jpg" alt="">
-                                        </div>
-                                        <div class="col-md-6 mb-20">
-                                            <img src="assets/img/course/02.jpg" alt="">
-                                        </div>
-                                    </div>
-                                    <p class="mb-20">
-                                        En suivant cette formation, vous serez capable d'exploiter efficacement des
-                                        données pour identifier des tendances, comprendre des comportements et faciliter
-                                        la prise de décision. Vous développerez également des compétences en raisonnement
-                                        analytique, en visualisation des données, en résolution de problèmes et en
-                                        présentation des résultats, essentielles dans de nombreux secteurs d'activité.
-                                    </p>
-                                    <div class="my-4">
-                                        <div class="mb-3">
-                                            <h3 class="mb-3"></h3>
-                                            <p>Il est recommandé d'avoir une connaissance de base en informatique et un intérêt pour les données et l'analyse avant de suivre cette formation.</p>
-                                        </div>
-                                        <ul class="course-single-list">
-                                            <li><i class="fas fa-check"></i>Avoir une connaissance de base en informatique</li>
-                                            <li><i class="fas fa-check"></i>Avoir un ordinateur avec une connexion Internet stable</li>
-                                            <li><i class="fas fa-check"></i>Avoir une motivation et un intérêt pour l'analyse des données</li>
-                                            <li><i class="fas fa-check"></i>Payer les frais de formation</li>
-                                            <li><i class="fas fa-check"></i>Savoir utiliser un ordinateur</li>
-                                        </ul>
-                                    </div>
-                                    <div class="my-4">
-                                        <h3 class="mb-3">Débouchés & Compétences Acquises</h3>
-                                        <p>
-                                            À l'issue de cette formation, les étudiants seront capables de collecter,
-                                            nettoyer, analyser et visualiser des données afin d'en extraire des
-                                            informations pertinentes. Ils auront acquis des compétences en Excel, SQL,
-                                            Python, statistiques, visualisation des données et création de tableaux de
-                                            bord. Les diplômés pourront travailler comme analystes de données,
-                                            assistants data analysts, analystes Business Intelligence ou consultants
-                                            en analyse de données dans différents secteurs d'activité.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-lg-4">
-                            <div class="course-single-sidebar">
-                                <div class="widget">
-                                    <h4 class="widget-title">Informations sur le Cours</h4>
-                                    <div class="course-single-info">
-                                        <div class="single-info author">
-                                            <div class="author-img">
-                                                <img src="assets/img/course/Andy.png" alt="#">
-                                            </div>
-                                            <div class="single-info-content">
-                                                <h4>Formateur</h4>
-                                                <span>Mbitang Andy</span>
-                                            </div>
-                                        </div>
-                                        <div class="single-info category">
-                                            <i class="far fa-bolt"></i>
-                                            <div class="single-info-content">
-                                                <h4>Catégorie</h4>
-                                                <span>Data & Informatique</span>
-                                            </div>
-                                        </div>
-                                        <div class="single-info s-enroll">
-                                            <i class="far fa-users"></i>
-                                            <div class="single-info-content">
-                                                <h4>Inscrits</h4>
-                                                <span>Places limitées</span>
-                                            </div>
-                                        </div>
-                                        <div class="single-info rattings">
-                                            <i class="far fa-clock"></i>
-                                            <div class="single-info-content">
-                                                <h4>Durée du Cours</h4>
-                                                <span>06 Mois</span>
-                                            </div>
-                                        </div>
-                                        <div class="single-info rattings">
-                                            <i class="far fa-dollar"></i>
-                                            <div class="single-info-content">
-                                                <h4>Tarif</h4>
-                                                <span>100,000 FCFA</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="theme-btn">S'inscrire <i class="fas fa-arrow-right-long"></i></a>
-                                </div>
-                                <div class="widget">
-                                    <h4 class="widget-title">Caractéristiques du Cours</h4>
-                                    <div class="course-feature-list">
-                                        <a href="#"><i class="far fa-book-open"></i> Séances <span> 3fois/sem</span></a>
-                                        <a href="#"><i class="far fa-pencil"></i> Évaluations <span>12</span></a>
-                                        <a href="#"><i class="far fa-clock"></i> Durée <span>6 Mois</span></a>
-                                        <a href="#"><i class="far fa-globe"></i> Langue <span>Français/Anglais</span></a>
-                                        <a href="#"><i class="far fa-fill-drip"></i> Niveau de Compétence <span>Basique</span></a>
-                                        <a href="#"><i class="far fa-location-dot"></i> Lieu <span>Douala, Gift Center</span></a>
-                                        <a href="#"><i class="far fa-users"></i> Étudiants <span>90</span></a>
-                                        <a href="#"><i class="far fa-graduation-cap"></i> Certificat
-                                            <span>Oui</span></a>
-                                        <a href="#"><i class="far fa-check-circle"></i> Évaluations <span>Oui</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                      <div class="col-md-6 mb-20">
+                        <img src="assets/img/course/Dev web 3.jpg" alt="" />
+                      </div>
+                      <div class="col-md-6 mb-20">
+                        <img src="assets/img/course/course2.png" alt="" />
+                      </div>
                     </div>
+                    <p class="mb-20">
+                      En suivant cette formation, vous serez capable d'exploiter
+                      efficacement des données pour identifier des tendances,
+                      comprendre des comportements et faciliter la prise de
+                      décision. Vous développerez également des compétences en
+                      raisonnement analytique, en visualisation des données, en
+                      résolution de problèmes et en présentation des résultats,
+                      essentielles dans de nombreux secteurs d'activité.
+                    </p>
+                    <div class="my-4">
+                      <div class="mb-3">
+                        <h3 class="mb-3"></h3>
+                        <p>
+                          Il est recommandé d'avoir une connaissance de base en
+                          informatique et un intérêt pour les données et
+                          l'analyse avant de suivre cette formation.
+                        </p>
+                      </div>
+                      <ul class="course-single-list">
+                        <li>
+                          <i class="fas fa-check"></i>Avoir une connaissance de
+                          base en informatique
+                        </li>
+                        <li>
+                          <i class="fas fa-check"></i>Avoir un ordinateur avec
+                          une connexion Internet stable
+                        </li>
+                        <li>
+                          <i class="fas fa-check"></i>Avoir une motivation et un
+                          intérêt pour l'analyse des données
+                        </li>
+                        <li>
+                          <i class="fas fa-check"></i>Payer les frais de
+                          formation
+                        </li>
+                        <li>
+                          <i class="fas fa-check"></i>Savoir utiliser un
+                          ordinateur
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="my-4">
+                      <h3 class="mb-3">Débouchés & Compétences Acquises</h3>
+                      <p>
+                        À l'issue de cette formation, les étudiants seront
+                        capables de collecter, nettoyer, analyser et visualiser
+                        des données afin d'en extraire des informations
+                        pertinentes. Ils auront acquis des compétences en Excel,
+                        SQL, Python, statistiques, visualisation des données et
+                        création de tableaux de bord. Les diplômés pourront
+                        travailler comme analystes de données, assistants data
+                        analysts, analystes Business Intelligence ou consultants
+                        en analyse de données dans différents secteurs
+                        d'activité.
+                      </p>
+                    </div>
+                  </div>
                 </div>
+              </div>
+              <div class="col-xl-4 col-lg-4">
+                <div class="course-single-sidebar">
+                  <div class="widget">
+                    <h4 class="widget-title">Informations sur le Cours</h4>
+                    <div class="course-single-info">
+                      <div class="single-info author">
+                        <div class="author-img">
+                          <img src="assets/img/course/Andy.png" alt="#" />
+                        </div>
+                        <div class="single-info-content">
+                          <h4>Formateur</h4>
+                          <span>Mbitang Andy</span>
+                        </div>
+                      </div>
+                      <div class="single-info category">
+                        <i class="far fa-bolt"></i>
+                        <div class="single-info-content">
+                          <h4>Catégorie</h4>
+                          <span>Data & Informatique</span>
+                        </div>
+                      </div>
+                      <div class="single-info s-enroll">
+                        <i class="far fa-users"></i>
+                        <div class="single-info-content">
+                          <h4>Inscrits</h4>
+                          <span>Places limitées</span>
+                        </div>
+                      </div>
+                      <div class="single-info rattings">
+                        <i class="far fa-clock"></i>
+                        <div class="single-info-content">
+                          <h4>Durée du Cours</h4>
+                          <span>06 Mois</span>
+                        </div>
+                      </div>
+                      <div class="single-info rattings">
+                        <i class="far fa-dollar"></i>
+                        <div class="single-info-content">
+                          <h4>Tarif</h4>
+                          <span>100,000 FCFA</span>
+                        </div>
+                      </div>
+                    </div>
+                    <a href="#" class="theme-btn"
+                      >S'inscrire <i class="fas fa-arrow-right-long"></i
+                    ></a>
+                  </div>
+                  <div class="widget">
+                    <h4 class="widget-title">Caractéristiques du Cours</h4>
+                    <div class="course-feature-list">
+                      <a href="#"
+                        ><i class="far fa-book-open"></i> Séances
+                        <span> 3fois/sem</span></a
+                      >
+                      <a href="#"
+                        ><i class="far fa-pencil"></i> Évaluations
+                        <span>12</span></a
+                      >
+                      <a href="#"
+                        ><i class="far fa-clock"></i> Durée
+                        <span>6 Mois</span></a
+                      >
+                      <a href="#"
+                        ><i class="far fa-globe"></i> Langue
+                        <span>Français/Anglais</span></a
+                      >
+                      <a href="#"
+                        ><i class="far fa-fill-drip"></i> Niveau de Compétence
+                        <span>Basique</span></a
+                      >
+                      <a href="#"
+                        ><i class="far fa-location-dot"></i> Lieu
+                        <span>Douala, Gift Center</span></a
+                      >
+                      <a href="#"
+                        ><i class="far fa-users"></i> Étudiants
+                        <span>90</span></a
+                      >
+                      <a href="#"
+                        ><i class="far fa-graduation-cap"></i> Certificat
+                        <span>Oui</span></a
+                      >
+                      <a href="#"
+                        ><i class="far fa-check-circle"></i> Évaluations
+                        <span>Oui</span></a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <!-- course-single end-->
-
+      </div>
+      <!-- course-single end-->
     </main>
-
-
-
-
 
     <!-- footer area -->
     <footer class="footer-area">
-        <div class="footer-shape">
-            <img src="assets/img/shape/03.png" alt="">
-        </div>
-        <div class="footer-widget">
-            <div class="container">
-                <div class="row footer-widget-wrapper pt-100 pb-70">
-                    <div class="col-md-6 col-lg-4">
-                        <div class="footer-widget-box about-us">
-                            <a href="#" class="footer-logo">
-                                <img src="assets/img/logo/Logo-gift-long-light-removebg-preview.png"  alt="">
-                            </a>
-                            <p class="mb-3">
-                                Gift Center est un centre de formation professionnelle, linguistique et digitale basé à Douala, au Cameroun.
-                            </p>
-                            <ul class="footer-contact">
-                                <li><a href="tel:+237695200378"><i class="far fa-phone"></i>+237 6 95 20 03 78</a></li>
-                                <li><i class="far fa-map-marker-alt"></i>Douala, Cameroun</li>
-                                <li><a href="mailto:giftagency237@gmail.com"><i
-                                            class="far fa-envelope"></i>giftagency237@gmail.com</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-2">
-                        <div class="footer-widget-box list">
-                            <h4 class="footer-widget-title">Liens rapides</h4>
-                            <ul class="footer-list">
-                                <li><a href="about.html"><i class="fas fa-caret-right"></i> À propos</a></li>
-                                <li><a href="faq.html"><i class="fas fa-caret-right"></i> FAQ</a></li>
-                                <li><a href="testimonial.html"><i class="fas fa-caret-right"></i> Témoignages</a></li>
-                                <li><a href="terms.html"><i class="fas fa-caret-right"></i> Conditions d'utilisation</a></li>
-                               <li><a href="privacy.html"><i class="fas fa-caret-right"></i> Politique de confidentialité</a></li>
-                                <li><a href="blog.html"><i class="fas fa-caret-right"></i> Actualités</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-widget-box list">
-                            <h4 class="footer-widget-title">Nos formations</h4>
-                            <ul class="footer-list">
-                                <li><a href="course-single-dev.html"><i class="fas fa-caret-right"></i> Développement Web & Mobile</a></li>
-                                <li><a href="course-single-design.html"><i class="fas fa-caret-right"></i> Graphisme & Design</a></li>
-                                <li><a href="course-single-video.html"><i class="fas fa-caret-right"></i> Montage Vidéo</a></li>
-                                <li><a href="course-single-data.html"><i class="fas fa-caret-right"></i> Data Analysis</a></li>
-                                <li><a href="course-single-administrative.html"><i class="fas fa-caret-right"></i> Bureautique & Administratif</a></li>
-                                <li><a href="course-single-langue.html"><i class="fas fa-caret-right"></i> Langues & Voyages</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3">
-                        <div class="footer-widget-box list">
-                            <h4 class="footer-widget-title">Newsletter</h4>
-                            <div class="footer-newsletter">
-                                <p>Abonnez-vous pour recevoir nos actualités</p>
-                                <div class="subscribe-form">
-                                    <form action="#">
-                                        <input type="email" class="form-control" placeholder="Votre email">
-                                        <button class="theme-btn" type="submit">
-                                            S'abonner<i class="far fa-paper-plane"></i>
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="footer-shape">
+        <img src="assets/img/shape/03.png" alt="" />
+      </div>
+      <div class="footer-widget">
+        <div class="container">
+          <div class="row footer-widget-wrapper pt-100 pb-70">
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-widget-box about-us">
+                <a href="#" class="footer-logo">
+                  <img
+                    src="assets/img/logo/Logo-gift-long-light-removebg-preview.png"
+                    alt=""
+                  />
+                </a>
+                <p class="mb-3">
+                  Gift Center est un centre de formation professionnelle,
+                  linguistique et digitale basé à Douala, au Cameroun.
+                </p>
+                <ul class="footer-contact">
+                  <li>
+                    <a href="tel:+237695200378"
+                      ><i class="far fa-phone"></i>+237 6 95 20 03 78</a
+                    >
+                  </li>
+                  <li><i class="far fa-map-marker-alt"></i>Douala, Cameroun</li>
+                  <li>
+                    <a href="mailto:giftagency237@gmail.com"
+                      ><i class="far fa-envelope"></i>giftagency237@gmail.com</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
-        <div class="copyright">
-            <div class="container">
-                <div class="copyright-wrapper">
-                    <div class="row">
-                        <div class="col-md-6 align-self-center">
-                            <p class="copyright-text">
-                                &copy; Copyright <span id="date"></span> <a href="#"> Gift Center </a>. Tous droits réservés.
-                            </p>
-                        </div>
-                        <div class="col-md-6 align-self-center">
-                            <ul class="footer-social">
-                                <li><a href="https://www.facebook.com/giftcenter00237" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://wa.me/237695200378" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
-                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="https://youtu.be/hLjIiWJATbw?si=-hZdT7vceO1a3NTI" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-md-6 col-lg-2">
+              <div class="footer-widget-box list">
+                <h4 class="footer-widget-title">Liens rapides</h4>
+                <ul class="footer-list">
+                  <li>
+                    <a href="about.html"
+                      ><i class="fas fa-caret-right"></i> À propos</a
+                    >
+                  </li>
+                  <li>
+                    <a href="faq.html"
+                      ><i class="fas fa-caret-right"></i> FAQ</a
+                    >
+                  </li>
+                  <li>
+                    <a href="testimonial.html"
+                      ><i class="fas fa-caret-right"></i> Témoignages</a
+                    >
+                  </li>
+                  <li>
+                    <a href="terms.html"
+                      ><i class="fas fa-caret-right"></i> Conditions
+                      d'utilisation</a
+                    >
+                  </li>
+                  <li>
+                    <a href="privacy.html"
+                      ><i class="fas fa-caret-right"></i> Politique de
+                      confidentialité</a
+                    >
+                  </li>
+                  <li>
+                    <a href="blog.html"
+                      ><i class="fas fa-caret-right"></i> Actualités</a
+                    >
+                  </li>
+                </ul>
+              </div>
             </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="footer-widget-box list">
+                <h4 class="footer-widget-title">Nos formations</h4>
+                <ul class="footer-list">
+                  <li>
+                    <a href="course-single-dev.html"
+                      ><i class="fas fa-caret-right"></i> Développement Web &
+                      Mobile</a
+                    >
+                  </li>
+                  <li>
+                    <a href="course-single-design.html"
+                      ><i class="fas fa-caret-right"></i> Graphisme & Design</a
+                    >
+                  </li>
+                  <li>
+                    <a href="course-single-video.html"
+                      ><i class="fas fa-caret-right"></i> Montage Vidéo</a
+                    >
+                  </li>
+                  <li>
+                    <a href="course-single-data.html"
+                      ><i class="fas fa-caret-right"></i> Data Analysis</a
+                    >
+                  </li>
+                  <li>
+                    <a href="course-single-administrative.html"
+                      ><i class="fas fa-caret-right"></i> Bureautique &
+                      Administratif</a
+                    >
+                  </li>
+                  <li>
+                    <a href="course-single-langue.html"
+                      ><i class="fas fa-caret-right"></i> Langues & Voyages</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="footer-widget-box list">
+                <h4 class="footer-widget-title">Newsletter</h4>
+                <div class="footer-newsletter">
+                  <p>Abonnez-vous pour recevoir nos actualités</p>
+                  <div class="subscribe-form">
+                    <form action="#">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Votre email"
+                      />
+                      <button class="theme-btn" type="submit">
+                        S'abonner<i class="far fa-paper-plane"></i>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="copyright">
+        <div class="container">
+          <div class="copyright-wrapper">
+            <div class="row">
+              <div class="col-md-6 align-self-center">
+                <p class="copyright-text">
+                  &copy; Copyright <span id="date"></span>
+                  <a href="#"> Gift Center </a>. Tous droits réservés.
+                </p>
+              </div>
+              <div class="col-md-6 align-self-center">
+                <ul class="footer-social">
+                  <li>
+                    <a
+                      href="https://www.facebook.com/giftcenter00237"
+                      target="_blank"
+                      ><i class="fab fa-facebook-f"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://wa.me/237695200378" target="_blank"
+                      ><i class="fab fa-whatsapp"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://youtu.be/hLjIiWJATbw?si=-hZdT7vceO1a3NTI"
+                      target="_blank"
+                      ><i class="fab fa-youtube"></i
+                    ></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </footer>
     <!-- footer area end -->
-
-
-
 
     <!-- scroll-top -->
     <a href="#" id="scroll-top"><i class="far fa-arrow-up-from-arc"></i></a>
     <!-- scroll-top end -->
-
 
     <!-- js -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
@@ -570,7 +944,5 @@
     <script src="assets/js/counter-up.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
-
-</body>
-
+  </body>
 </html>

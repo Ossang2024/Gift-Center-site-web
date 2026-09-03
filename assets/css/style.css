@@ -94,14 +94,14 @@ Table of contents
 2. Theme variables
 ======================*/
 
-  /* --theme-color: #116e63;
+/* --theme-color: #116e63;
   --theme-color2: #fda31b; */
 
 :root {
   --body-font: "Roboto", sans-serif;
   --heading-font: "Yantramanav", sans-serif;
   --theme-color: #26979f;
-  --theme-color2: #fda31b; 
+  --theme-color2: #fda31b;
   --theme-color-light: rgb(17, 110, 99, 0.09);
   --theme-bg-light: #f2f3f5;
   --body-text-color: #757f95;
@@ -2601,7 +2601,7 @@ label {
 }
 
 .ts-bg {
-  background-image: url(../img/testimonial/bg.jpg);
+  background-image: url(../img/testimonial/bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -2715,7 +2715,7 @@ label {
 
 .counter-area {
   position: relative;
-  background-image: url(../img/counter/01.jpg);
+  background-image: url(../img/counter/counter.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -2810,7 +2810,7 @@ label {
 
 .cta-area {
   position: relative;
-  background-image: url(../img/cta/01.jpg);
+  background-image: url(../img/cta/image\ 4.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -3066,7 +3066,7 @@ label {
 
 .enroll-area {
   position: relative;
-  background-image: url(../img/enroll/01.jpg);
+  background-image: url(../img/enroll/enrol1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
