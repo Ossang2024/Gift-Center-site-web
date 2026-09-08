@@ -482,7 +482,7 @@
         <div class="container">
           <div class="application-form">
             <h3>Formulaire d'inscription</h3>
-            <form action="#">
+            <form action="#" id="application-form">
               <div class="row">
                 <h5 class="mb-3">Informations Basique</h5>
                 <div class="col-lg-6">
@@ -511,22 +511,17 @@
                   <div class="form-group">
                     <label>Formation souhaitée</label>
                     <select class="form-select" name="program">
-                      <option value="">Sélectionner une formation</option>
-                      <option value="1">Développement Web & Mobile</option>
-                      <option value="2">Graphique</option>
-                      <option value="3">Graphisme & Design</option>
-                      <option value="4">Montage Vidéo</option>
-                      <option value="5">Data Analysis</option>
-                      <option value="6">
-                        Assistance Administrative & Digitale
-                      </option>
-                      <option value="7">Anglais (+ IELTS)</option>
-                      <option value="8">
-                        Allemand (A1 à C1, Goethe-Zertifikat)
-                      </option>
-                      <option value="9">Italien (CELI, CILS, PLIDA)</option>
-                      <option value="10">Français (TCF)</option>
-                      <option value="11">Chinois (HSK)</option>
+                      <option value="Développement Web & Mobile">Développement Web & Mobile</option>
+                      <option value="Graphique">Graphique</option>
+                      <option value="Graphisme & Design">Graphisme & Design</option>
+                      <option value="Montage Vidéo">Montage Vidéo</option>
+                      <option value="Data Analysis">Data Analysis</option>
+                      <option value="Assistance Administrative & Digitale">Assistance Administrative & Digitale</option>
+                      <option value="Anglais (+ IELTS)">Anglais (+ IELTS)</option>
+                      <option value="Allemand (A1 à C1, Goethe-Zertifikat)">Allemand (A1 à C1, Goethe-Zertifikat)</option>
+                      <option value="Italien (CELI, CILS, PLIDA)">Italien (CELI, CILS, PLIDA)</option>
+                      <option value="Français (TCF)">Français (TCF)</option>
+                      <option value="Chinois (HSK)">Chinois (HSK)</option>
                     </select>
                   </div>
                 </div>
@@ -543,7 +538,7 @@
                             </div> -->
                 <div class="col-lg-6">
                   <div class="form-group">
-                    <label>Photo de l'étudiant</label>
+                    <!-- <label>Photo de l'étudiant</label>
                     <input
                       type="file"
                       class="form-control"
@@ -552,7 +547,7 @@
                     />
                     <div id="photohelp" class="form-text">
                       Entrez une photo de mois de 1MB
-                    </div>
+                    </div> -->
                   </div>
                 </div>
                 <!-- <div class="col-lg-6">
@@ -625,8 +620,8 @@
                     <label>Sexe</label>
                     <select class="form-select" name="gender">
                       <option value="">Choisissez votre sexe</option>
-                      <option value="1">Masculin</option>
-                      <option value="2">Féminin</option>
+                      <option value="Masculin">Masculin</option>
+                      <option value="Féminin">Féminin</option>
                     </select>
                   </div>
                 </div>
@@ -659,6 +654,7 @@
                   </div>
                 </div>
                 <div class="col-lg-12">
+                  <div class="form-messege mb-3"></div>
                   <button type="submit" class="theme-btn">
                     Envoyer ma demande d'inscription<i
                       class="fas fa-arrow-right-long"
@@ -855,6 +851,58 @@
     <!-- scroll-top -->
     <a href="#" id="scroll-top"><i class="far fa-arrow-up-from-arc"></i></a>
     <!-- scroll-top end -->
+
+    
+    <!-- SDK EmailJs-top -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init({ publicKey: "3SVbjD9lU9RZ5qoBf" });
+      })();
+    </script>
+    <!-- SDK EmailJs-end -->
+
+    <!-- Contact Form Script start -->
+    <script>
+        const applicationForm = document.getElementById('application-form');
+        const applicationMsg = applicationForm.querySelector('.form-messege');
+        const applicationBtn = applicationForm.querySelector('button[type="submit"]');
+        const applicationBtnText = applicationBtn.innerHTML;
+
+        applicationForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+
+          const agreeBox = applicationForm.querySelector('#agree');
+          if (agreeBox && !agreeBox.checked) {
+            applicationMsg.classList.remove('text-success');
+            applicationMsg.classList.add('text-danger');
+            applicationMsg.textContent = "Merci d'accepter les conditions d'utilisation avant d'envoyer votre demande.";
+            return;
+          }
+
+          applicationBtn.disabled = true;
+          applicationBtn.innerHTML = 'Envoi en cours...';
+
+          emailjs.sendForm('service_qop7z93', 'template_inscription1', applicationForm)
+            .then(function () {
+              applicationMsg.classList.remove('text-danger');
+              applicationMsg.classList.add('text-success');
+              applicationMsg.textContent = 'Votre demande d\'inscription a bien été envoyée. Nous vous recontactons rapidement !';
+              applicationForm.reset();
+            })
+            .catch(function () {
+              applicationMsg.classList.remove('text-success');
+              applicationMsg.classList.add('text-danger');
+              applicationMsg.textContent = "Une erreur est survenue. Réessayez ou contactez-nous directement par téléphone.";
+            })
+            .finally(function () {
+              applicationBtn.disabled = false;
+              applicationBtn.innerHTML = applicationBtnText;
+            });
+        });
+      </script>
+    <!-- Contact Form Script end -->
+
 
     <!-- js -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>

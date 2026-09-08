@@ -543,8 +543,6 @@
                     </p>
                   </div>
                   <form
-                    method="post"
-                    action="/eduka/assets/php/contact.php"
                     id="contact-form"
                   >
                     <div class="row">
@@ -593,7 +591,7 @@
                       Envoyer le message <i class="far fa-paper-plane"></i>
                     </button>
                     <div class="col-md-12 mt-3">
-                      <div class="form-messege text-success"></div>
+                      <div class="form-messege"></div>
                     </div>
                   </form>
                 </div>
@@ -799,6 +797,51 @@
     <a href="#" id="scroll-top"><i class="far fa-arrow-up-from-arc"></i></a>
     <!-- scroll-top end -->
 
+    <!-- SDK EmailJs-top -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>
+      (function () {
+        emailjs.init({ publicKey: "3SVbjD9lU9RZ5qoBf" });
+      })();
+    </script>
+    <!-- SDK EmailJs-end -->
+
+    <!-- Contact Form Script start -->
+    <script>
+        const contactForm = document.getElementById('contact-form');
+        const contactMsg = contactForm.querySelector('.form-messege');
+        const contactBtn = contactForm.querySelector('button[type="submit"]');
+        const contactBtnText = contactBtn.innerHTML;
+
+        contactForm.addEventListener('submit', function (e) {
+          e.preventDefault();
+          contactBtn.disabled = true;
+          contactBtn.innerHTML = 'Envoi en cours...';
+
+          emailjs.sendForm('service_qop7z93', 'template_contact1', contactForm)
+            .then(function () {
+              contactMsg.classList.remove('text-danger');
+              contactMsg.classList.add('text-success');
+              contactMsg.textContent = 'Votre message a bien été envoyé. Merci, nous revenons vers vous rapidement !';
+              contactForm.reset();
+            })
+            // .catch(function () {
+            //   contactMsg.classList.remove('text-success');
+            //   contactMsg.classList.add('text-danger');
+            //   contactMsg.textContent = "Une erreur est survenue. Réessayez ou contactez-nous directement par téléphone.";
+            // })
+            .catch(function (error) {
+              console.error("Erreur EmailJS :", error);
+
+              contactMsg.classList.remove("text-success");
+              contactMsg.classList.add("text-danger");
+              contactMsg.textContent =
+                "Une erreur est survenue. Consultez la console du navigateur.";
+            });
+          });
+    </script>
+    <!-- Contact Form Script end -->
+
     <!-- js -->
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="assets/js/modernizr.min.js"></script>
@@ -811,7 +854,7 @@
     <script src="assets/js/owl.carousel.min.js"></script>
     <script src="assets/js/counter-up.js"></script>
     <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/contact-form.js"></script>
+    <!-- <script src="assets/js/contact-form.js"></script> -->
     <script src="assets/js/main.js"></script>
   </body>
 </html>
